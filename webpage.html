@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment Quiz</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1552119905-9975e25dfbf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by0xMDd8fHw&auto=format&fit=crop&w=1000&q=60');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #ffffff;
+    }
+
+    #messenger-container {
+      width: 500px;
+      height: 450px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3498db;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="messenger-container">
+    <img src="https://th.bing.com/th/id/OIP.ip-mvc9Q34beSuoriJSWuwHaEK?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Entertainment Quiz" style="width: 100%; height: auto; margin-bottom: 20px;">
+    <h1>Entertainment Quiz</h1>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="bot"
+      agent-id="28802ab5-23aa-4116-94d4-e206710686c6"
+      language-code="en"
+    ></df-messenger>
+  </div>
+</body>
+</html>
+
+
